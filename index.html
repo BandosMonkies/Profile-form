@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Personal Profile Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Smart Personal Profile Form</h1>
+        <div class="datetime" id="datetime">Date & Time: 7/7/2025, 8:04:43 PM</div>
+    </header>
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="preview-section">
+            <h2>Live Preview</h2>
+            <div class="preview-content" id="previewContent">
+                <div class="preview-item">
+                    <span class="preview-label">Name:</span>
+                    <span class="preview-value" id="previewName">-</span>
+                </div>
+                <div class="preview-item">
+                    <span class="preview-label">Email:</span>
+                    <span class="preview-value" id="previewEmail">-</span>
+                </div>
+                <div class="preview-item">
+                    <span class="preview-label">Phone:</span>
+                    <span class="preview-value" id="previewPhone">-</span>
+                </div>
+                <div class="preview-item">
+                    <span class="preview-label">Bio:</span>
+                    <div class="preview-bio preview-value" id="previewBio">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
